@@ -23,7 +23,7 @@ def update_schedule(schedule):
     else:    
         #Clear all Special Speakers that have passed
         schedule = schedule[~((~(Special_Speaker_List)) & \
-                              (schedule['Date'] < pd.Timestamp(pd.datetime.now().date())))]  
+                              (schedule['Date'] <= pd.Timestamp(pd.datetime.now().date())))]  
         
         End_Schedule_Date = schedule.iloc[-1,schedule.columns.get_loc('Date')]
         Start_Today_Periods = len(schedule[schedule['Date'] < pd.Timestamp(pd.datetime.now().date())])
@@ -84,7 +84,21 @@ def Add_Special_Replacement(schedule,date,speaker,topic, offset=True):
     schedule = schedule.reset_index(drop=True)
 
     return schedule
+
+def Mask_Date(schedule,date,date_move,T_P=1):
+    #T_P is Tie-Priority. Only need if we have speakers in a row to miss talks.
+
+    date_move = pd.Timestamp(date_move) + pd.DateOffset(hours=T_P)    
+    schedule.iloc[schedule[(schedule['Date']==date)].index[0],schedule.columns.get_loc('Date')] = date_move
+    
+    if date_move > pd.Timestamp(pd.datetime.now().date()):        
+        schedule = schedule[~(schedule['Date'] == date_move)]
+        schedule = schedule.reset_index(drop=True)
+        return schedule
+    
+    else:
         
+        return schedule
     
 
 def DoW_Schedule(schedule,proposed_day):
