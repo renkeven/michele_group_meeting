@@ -62,7 +62,7 @@ def Offset_Schedule(schedule,date,weeks_num, special_offset=False):
             schedule.iloc[Insert_Index:,schedule.columns.get_loc('Date')] = Offset
     
         else:
-            print 'Date not present in dataframe'
+            print('Date not present in dataframe')
     
     if (special_offset == True):
         Insert_Index = schedule[schedule['Date'] >= date].index[0]
@@ -87,6 +87,7 @@ def Add_Special_Replacement(schedule,date,speaker,topic, offset=True):
 
 def Mask_Date(schedule,date,date_move,T_P=1):
     #T_P is Tie-Priority. Only need if we have speakers in a row to miss talks.
+    #Artifically add a small buffer time and mask it.
 
     date_move = pd.Timestamp(date_move) + pd.DateOffset(hours=T_P)    
     schedule.iloc[schedule[(schedule['Date']==date)].index[0],schedule.columns.get_loc('Date')] = date_move
