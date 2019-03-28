@@ -66,6 +66,7 @@ def Offset_Schedule(schedule,date,weeks_num, special_offset=False):
     
     if (special_offset == True):
         Insert_Index = schedule[schedule['Date'] >= date].index[0]
+        #print(Insert_Index)
         Offset = schedule.iloc[Insert_Index:,schedule.columns.get_loc('Date')] + pd.DateOffset(weeks=weeks_num)
         schedule.iloc[Insert_Index:,schedule.columns.get_loc('Date')] = Offset
     
@@ -98,7 +99,8 @@ def Mask_Date(schedule,date,date_move,T_P=1):
         return schedule
     
     else:
-        
+        schedule = schedule.sort_values('Date')  #exp
+        schedule = schedule.reset_index(drop=True)
         return schedule
     
 
