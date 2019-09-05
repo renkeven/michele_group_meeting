@@ -1,25 +1,25 @@
-,Date,Topic,Speaker
-0,2019-08-01,Order of Mag.,Robert
-1,2019-08-08,Arxiv Paper,Alex
-2,2019-08-15,Classical Review,Oliver
-3,2019-08-22,Order of Mag.,Adam
-4,2019-08-29,Arxiv Paper,Benjamin
-5,2019-09-05,Classical Review,Matt
-6,2019-09-12,Order of Mag.,Keven
-7,2019-09-19,Arxiv Paper,Robert
-8,2019-09-26,Classical Review,Alex
-9,2019-10-03,Order of Mag.,Oliver
-10,2019-10-10,Arxiv Paper,Adam
-11,2019-10-17,Classical Review,Benjamin
-12,2019-10-24,Order of Mag.,Matt
-13,2019-10-31,Arxiv Paper,Keven
-14,2019-11-07,Classical Review,Robert
-15,2019-11-14,Order of Mag.,Alex
-16,2019-11-21,Arxiv Paper,Oliver
-17,2019-11-28,Classical Review,Adam
-18,2019-12-05,Order of Mag.,Benjamin
-19,2019-12-12,Arxiv Paper,Matt
-20,2019-12-19,Classical Review,Keven
-21,2019-12-26,Order of Mag.,Robert
-22,2020-01-02,Arxiv Paper,Alex
-23,2020-01-09,Classical Review,Oliver
+,Date,Speaker,Topic
+0,2019-09-12,Alex,Arxiv Paper
+1,2019-09-19,Adam,Order of Mag.
+2,2019-09-26,Benjamin,Arxiv Paper
+3,2019-10-03,Matt,Classical Review
+4,2019-10-10,Keven,Order of Mag.
+5,2019-10-17,Robert,Arxiv Paper
+6,2019-10-24,Alex,Classical Review
+7,2019-10-31,Oliver,Order of Mag.
+8,2019-11-07,Adam,Arxiv Paper
+9,2019-11-14,Benjamin,Classical Review
+10,2019-11-21,Matt,Order of Mag.
+11,2019-11-28,Keven,Arxiv Paper
+12,2019-12-05,Robert,Classical Review
+13,2019-12-12,Alex,Order of Mag.
+14,2019-12-19,Oliver,Arxiv Paper
+15,2019-12-26,Adam,Classical Review
+16,2020-01-02,Benjamin,Order of Mag.
+17,2020-01-09,Matt,Arxiv Paper
+18,2020-01-16,Keven,Classical Review
+19,2020-01-23,Robert,Order of Mag.
+20,2020-01-30,Alex,Arxiv Paper
+21,2020-02-06,Oliver,Classical Review
+22,2020-02-13,Robert,Order of Mag.
+23,2020-02-20,Oliver,Classical Review
