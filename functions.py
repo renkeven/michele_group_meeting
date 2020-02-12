@@ -4,6 +4,15 @@ import pandas as pd
 #Load Schedule
 #See Usage on Initial Group Scheduler jupyter notebook:
 
+def load_schedule_with_astro3d(sdate,topic,presenter, length):
+    true_length = length+(np.floor(length/3.)) #Includes astro3d every 4th week
+    schedule = pd.DataFrame(index=np.arange(0,true_length), columns=('Topic','Speaker') )
+
+#    for i in np.arange(0, numberOfRows):
+#    schedule.iloc[i]
+    
+    return schedule
+
 def load_schedule(sdate,topic,presenter):
     schedule = pd.DataFrame({'Date':sdate,'Topic':topic, 'Speaker':presenter})
     
