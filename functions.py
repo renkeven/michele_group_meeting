@@ -26,21 +26,26 @@ def update_schedule(schedule):
     Start_Schedule_Date = schedule.iloc[0,schedule.columns.get_loc('Date')]
     Special_Speaker_List = schedule['Topic'].isin(['Arxiv Paper','Classical Review','Order of Mag.'])
      
-    if Start_Schedule_Date > pd.Timestamp(pd.datetime.now().date()):        
+    if Start_Schedule_Date >= pd.Timestamp(pd.datetime.now().date()):        
         return schedule
     
     else:    
         #Clear all Special Speakers that have passed
         schedule = schedule[~((~(Special_Speaker_List)) & \
-                              (schedule['Date'] <= pd.Timestamp(pd.datetime.now().date())))]  
+                              (schedule['Date'] < pd.Timestamp(pd.datetime.now().date())))]  
         
         End_Schedule_Date = schedule.iloc[-1,schedule.columns.get_loc('Date')]
         Start_Today_Periods = len(schedule[schedule['Date'] < pd.Timestamp(pd.datetime.now().date())])
-    
+        
         New_Schedule = schedule[schedule['Date'] >= pd.Timestamp(pd.datetime.now().date())].append(schedule[schedule['Date'] < pd.Timestamp(pd.datetime.now().date())])
         New_Schedule = New_Schedule.reset_index(drop=True)
-    
+
+        print(New_Schedule)
+        
         New_Dates = pd.date_range(End_Schedule_Date + pd.DateOffset(days=1), periods = Start_Today_Periods, freq=Period_Dictionary[Current_Day])
+        
+        print(New_Dates)
+        
         New_Schedule.iloc[-Start_Today_Periods:, New_Schedule.columns.get_loc('Date')] = New_Dates
     
         return New_Schedule
