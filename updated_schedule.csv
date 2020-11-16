@@ -1,34 +1,34 @@
 ,Date,Topic,Speaker
-0,2020-10-28,MSc Presentation,Tom
-1,2020-11-04,Order of Mag.,Benjamin
-2,2020-11-11,Classical Review,Oliver
-3,2020-11-18,Arxiv Paper,Keven
-4,2020-11-25,Order of Mag.,Balu
-5,2020-12-02,Classical Review,Brad
-6,2020-12-09,Arxiv Paper,Hilmi
-7,2020-12-16,Order of Mag.,Matt
-8,2020-12-23,Classical Review,Alex
-9,2020-12-30,Arxiv Paper,Nicha
-10,2021-01-06,Order of Mag.,James
-11,2021-01-13,Classical Review,Benjamin
-12,2021-01-20,Arxiv Paper,Brad
-13,2021-01-27,Order of Mag.,Oliver
-14,2021-02-03,Classical Review,Keven
-15,2021-02-10,Arxiv Paper,Balu
-16,2021-02-17,Order of Mag.,Hilmi
-17,2021-02-24,Classical Review,Matt
-18,2021-03-03,Arxiv Paper,Tom
-19,2021-03-10,Order of Mag.,Alex
-20,2021-03-17,Classical Review,Nicha
-21,2021-03-24,Arxiv Paper,James
-22,2021-03-31,Order of Mag.,Benjamin
-23,2021-04-07,Classical Review,Brad
-24,2021-04-14,Arxiv Paper,Oliver
-25,2021-04-21,Order of Mag.,Keven
-26,2021-04-28,Classical Review,Balu
-27,2021-05-05,Arxiv Paper,Hilmi
-28,2021-05-12,Order of Mag.,Matt
-29,2021-05-19,Arxiv Paper,Tom
-30,2021-05-26,Order of Mag.,Alex
-31,2021-06-02,Classical Review,Nicha
-32,2021-06-09,Arxiv Paper,James
+0,2020-11-18,Order of Mag.,Benjamin
+1,2020-11-25,Classical Review,Oliver
+2,2020-12-02,Arxiv Paper,Keven
+3,2020-12-09,Order of Mag.,Balu
+4,2020-12-16,Classical Review,Brad
+5,2020-12-23,Arxiv Paper,Hilmi
+6,2020-12-30,Order of Mag.,Matt
+7,2021-01-06,Arxiv Paper,Alex
+8,2021-01-13,Order of Mag.,Nicha
+9,2021-01-20,Classical Review,James
+10,2021-01-27,Arxiv Paper,Benjamin
+11,2021-02-03,Order of Mag.,Brad
+12,2021-02-10,Classical Review,Oliver
+13,2021-02-17,Arxiv Paper,Keven
+14,2021-02-24,Order of Mag.,Balu
+15,2021-03-03,Classical Review,Hilmi
+16,2021-03-10,Arxiv Paper,Matt
+17,2021-03-17,Order of Mag.,Tom
+18,2021-03-24,Classical Review,Alex
+19,2021-03-31,Arxiv Paper,Nicha
+20,2021-04-07,Order of Mag.,James
+21,2021-04-14,Classical Review,Benjamin
+22,2021-04-21,Arxiv Paper,Brad
+23,2021-04-28,Order of Mag.,Oliver
+24,2021-05-05,Classical Review,Keven
+25,2021-05-12,Arxiv Paper,Balu
+26,2021-05-19,Order of Mag.,Hilmi
+27,2021-05-26,,Matt
+28,2021-06-02,Arxiv Paper,Tom
+29,2021-06-09,Order of Mag.,Alex
+30,2021-06-16,Classical Review,Nicha
+31,2021-06-23,Arxiv Paper,James
+32,2021-06-30,Classical Review,Tom
